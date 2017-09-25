@@ -30,6 +30,45 @@ echo "I do not like $sodas[2] whatsoever </br>";
 echo '<hr />';
 
 
+print '<h1> This is the add slash string function</h1>';
+
+$question = "Hello, how are you today Mr. O'Shea?";
+
+echo addslashes ($question);
+
+echo '<hr />';
+
+print '<h1> This is the chop string function  </h1>';
+
+$testtext = 'Kalamazoo';
+echo  "<pre>";
+echo chop ("    kala      ");
+echo chop ("$testtext", "a..z");
+echo "</pre>";
+
+
+echo '<hr />';
+
+
+print '<h1> This is the hex2bin string function </h1>';
+
+
+$hex = hex2bin("68656c6c6f2070726f666573736f722077696c6c69616d73");
+var_dump($hex);
+
+echo '<hr />';
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
