@@ -111,45 +111,60 @@ $place = 'offices';
 $format = 'The majority of the company has %d small %s all around New Jersey';
 echo sprintf ($format, $number, $place);
 
+echo '<hr />';
 
-                      
-
-
-
+// Number 1/10 array functions
 
 
+print '<h1> This begings the Array Section of this homework </h1>';
+
+print '<h2> This is the Array Chunk array function </h2>';
+
+$new_array = array('g', 'a', 'r', 'r', 'i', 'n');
+print_r (array_chunk($new_array, 2));
+
+echo '<hr />';
+
+// Number 2/10
+
+print '<h1> This is the Array Column array function </h1>';
+
+$fields1 = array(
+
+array(
+
+'id' => 2555,
+'first_name' => 'James',
+'Last_name' => 'Kennedy',
+),
+
+array(
+'id' => 1555,
+'first_name' => 'Garrin',
+'Last_name' => 'Saccento',
+)
+
+);
 
 
+$first_names = array_column($fields1, 'first_name');
+print_r ($first_names);
 
+echo '<hr />';
 
+// Number 3/10
 
+print '<h1> This is the Array Diff array function </h1>';
 
+$array31 = array("a" => "tuna", "salmon", "Trout", "Catfish");
+$array32 = array("b" => "tuna", "salmon", "Swordfish", "Catfish");
+$show = array_diff($array31, $array32);
 
+print_r($show);
 
+echo '<hr />';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Number 4/10
 
 
 
