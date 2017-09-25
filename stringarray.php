@@ -121,7 +121,7 @@ print '<h1> This begings the Array Section of this homework </h1>';
 print '<h2> This is the Array Chunk array function </h2>';
 
 $new_array = array('g', 'a', 'r', 'r', 'i', 'n');
-print_r (array_chunk($new_array, 2));
+print_r (array_chunk($new_array, 2 ));
 
 echo '<hr />';
 
@@ -166,9 +166,37 @@ echo '<hr />';
 
 // Number 4/10
 
+print '<h1> This is the Array Fill Keys array function</h1>';
 
+$newkeys = array('1key', '2key', '3key', '4key');
+$addkeys = array_fill_keys($newkeys, 'i am the same</br>');
+print_r($addkeys);
 
+echo '<hr />';
 
+//number 5/10
 
+print '<h1> This is the array filter array function</h1>';
+
+function odd($var)
+
+{
+	Return ($var & 1);
+	}
+
+function even($var)
+{
+	Return(!($var & 1));
+	}
+
+$array51 = array("a"=>1, "b"=>2, "c"=>3, "d"=>4, "e"=>5);
+$array52 = array(6, 7, 8, 9, 10, 11, 12);
+
+echo"Odd :\n</br> ";
+print_r(array_filter($array51, "odd"));
+echo "</br> even :\n</br>";
+print_r(array_filter($array52, "even"));
+
+echo '<hr />';
 
 ?>
