@@ -216,6 +216,53 @@ echo'<hr />';
 // Number 7/10
 
 
+print '<h1> This is the Array Values array function</h1>';
+
+$array71 = array("computer" => "Dell" , "car" => "BMW");
+print_r(array_values($array71));
+
+echo '<hr />';
+
+// Number 8/10
+
+
+print '<h1> This is the Array Asort array function </h1>';
+
+$cars = array(" a "=>" bmw " , " b "=>" ford ",  " c "=>" porsche ", " d "=>" delorean ");
+	asort($cars);
+		foreach ($cars as $key => $val) {
+
+			echo "$key = $val\n</br> ";
+			}
+
+echo '<hr />';
+
+// number 9/10
+
+
+print '<h1> This is the Array Compact array function </h1>';
+
+$state = "NJ";
+$city = "Camden";
+$todo = "Aquarium";
+
+$myagenda = array("city" , "state");
+
+$plan = compact("todo", $myagenda);
+
+print_r ($plan);
+
+echo '<hr />';
+
+// Number 10/10
+
+
+
+
+
+
+
+ 
 
 
 
