@@ -199,4 +199,29 @@ print_r(array_filter($array52, "even"));
 
 echo '<hr />';
 
+
+// Number 6/10
+
+print '<h1> This is the Array Sum array function</h1>';
+
+$value1 = array(10,20,30,40);
+echo "The sum of value 1 is " . array_sum($value1) ."\n" ;
+
+$value2 = array("a "=> 4.0, "b" => 3.3, "c" => 3.9);
+echo "</br> The sum of value 2 is  " . array_sum($value2) ."\n";
+
+echo'<hr />';
+
+
+// Number 7/10
+
+
+
+
+
+
+
+
+
+
 ?>
