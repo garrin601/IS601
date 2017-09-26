@@ -257,8 +257,23 @@ echo '<hr />';
 // Number 10/10
 
 
+print '<h1> This is the Array Count array function <h1>';
+
+$aa[0] = 3;
+$bb[1] = 5;
+$cc[2] = 7;
+$aa[3] = 23;
+$aa[4] = 22;
 
 
+$newvalue = count($aa);
+
+print_r ($newvalue);
+
+
+echo '<hr />';
+
+print '<h1> THE END </h1>';
 
 
 
